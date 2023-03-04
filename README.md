@@ -1,3 +1,13 @@
+# pagina_institucional con React
+
+Proyecto Pagina Institucional UNIREMINGTON con React
+
+### Integrantes
+
+- Jose Gonzalez
+- Edison Pineda
+- Esteban Causado
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
