@@ -11,7 +11,7 @@
   margin: 30px auto;
 }*/
 body {
-  background-image: url(/src/img/colegios_1.jpg);
+  background-image: url(https://i.postimg.cc/d17pFp7L/colegios-1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   /*background-color: rgb(212, 240, 251);*/
@@ -28,7 +28,7 @@ h1 {
 
 p {
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
 }
 
@@ -104,7 +104,7 @@ nav {
 
 /*****Imagen de fondo*****/
 .bg-photo {
-  background: #fff url(/src/img/colegios_1.jpg) no-repeat top left fixed;
+  background: #fff url(https://i.postimg.cc/d17pFp7L/colegios-1.jpg) no-repeat top left fixed;
   background-size: cover;
 }
 
@@ -132,7 +132,6 @@ nav {
 }
 
 .mySlides {
-  display: none;
   text-align: center;
   
 }
