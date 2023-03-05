@@ -1,13 +1,188 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  border: solid 0px #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*.header{
+  width: 1000px;
+  margin: 30px auto;
+}*/
+body {
+  background-image: url(/src/img/colegios_1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /*background-color: rgb(212, 240, 251);*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+p {
+  text-align: left;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+
+.cuerpo {
+  color: rgb(0, 0, 0);
+}
+
+.img-inst {
+  width: 100%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.navegacion {
+  text-align: right;
+  font-size: 10px;
+
+}
+
+nav {
+  /*margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+  background-color: #c6c6c5;
+  position: relative;
+  height: 120px;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 1px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-line {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: black;
+  padding: 8px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.header-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #20b2aa;
+  transition: width 0.5s;
+}
+
+.header-line:hover::before {
+  width: 100%;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  display: inline-flex;
+  position: relative;
+  justify-content: left;
+  left: -100px;
+  align-items: center;
+}
+
+/*****Imagen de fondo*****/
+.bg-photo {
+  background: #fff url(/src/img/colegios_1.jpg) no-repeat top left fixed;
+  background-size: cover;
+}
+
+
+
+/**inician estilos para imagenes de pagina inicial**/
+/**por Jose Gonzalez**/
+
+.slideshow-contenedor {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  border-radius: 4px;
+  
+}
+
+.slideshow-envoltura {
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+ 
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+  
+}
+
+.mySlides img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+h4{
+  text-align: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
