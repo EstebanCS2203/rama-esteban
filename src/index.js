@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import Footer from './componentes/footer/Footer';
 import './componentes/footer/Footer.css'
 import reportWebVitals from './reportWebVitals';
+import Header from './componentes/header/Header'
+import './componentes/header/Header.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,13 @@ root.render(
   <React.StrictMode>
     {/*<App />*/}
     <Footer />
+  </React.StrictMode>
+);
+
+const header = ReactDOM.createRoot(document.getElementById('Header'));
+header.render(
+  <React.StrictMode>
+    <Header />
   </React.StrictMode>
 );
 
