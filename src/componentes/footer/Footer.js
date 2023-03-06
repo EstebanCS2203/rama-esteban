@@ -20,10 +20,10 @@ function Footer() {
                 <div id="footer-izq">
                     <h3>Institución<span> Jose Fernando Causado</span></h3>
                     <p id="footer-links">
-                        <a href="#" id="link-1"> Home </a>
-                        <a href="#"> Acerca de nosotros </a>
-                        <a href="#"> Preguntas </a>
-                        <a href="#"> Contacto </a>
+                        <a href={() => false} id="link-1"> Home </a>
+                        <a href={() => false}> Acerca de nosotros </a>
+                        <a href={() => false}> Preguntas </a>
+                        <a href={() => false}> Contacto </a>
                     </p>
                     <p id="footer-nombre-inst">Institucion educativa Jose Fernando Causado © 2023</p>
                 </div>
@@ -47,10 +47,10 @@ function Footer() {
                         "Donde la educación se encuentra con la innovación: preparando a los estudiantes para un futuro brillante"
                     </p>
                     <div id="footer-icons">
-                        <a href="#"><i id="logo-facebook"></i><img src="https://i.postimg.cc/3Nmq4GFh/facebook.png" width="35"></img></a>
-                        <a href="#"><i id="fa fa-twitter"></i><img src="https://i.postimg.cc/P53SqKnZ/twitter.png" width="35"></img></a>
-                        <a href="#"><i id="fa fa-linkedin"></i><img src="https://i.postimg.cc/T3C4DfgK/linkedin.png" width="35"></img></a>
-                        <a href="#"><i id="logo-github"></i><img src="https://i.postimg.cc/wTYZKW9j/github.png" width="35"></img></a>
+                        <a href={() => false}><i id="logo-facebook"></i><img src="https://i.postimg.cc/3Nmq4GFh/facebook.png" width="35"></img></a>
+                        <a href={() => false}><i id="fa fa-twitter"></i><img src="https://i.postimg.cc/P53SqKnZ/twitter.png" width="35"></img></a>
+                        <a href={() => false}><i id="fa fa-linkedin"></i><img src="https://i.postimg.cc/T3C4DfgK/linkedin.png" width="35"></img></a>
+                        <a href={() => false}><i id="logo-github"></i><img src="https://i.postimg.cc/wTYZKW9j/github.png" width="35"></img></a>
                     </div>
                 </div>
             </footer>
