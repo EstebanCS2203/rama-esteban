@@ -4,28 +4,28 @@ function Header() {
     return (
         <div className="Header">
             <nav id="nav-header">
-                <img src="https://i.postimg.cc/JnB6vXgX/logo.png" id="logo" />
+                <img src="https://i.postimg.cc/JnB6vXgX/logo.png" id="logo" alt="logo" ></img>
                 <div id="linea"></div>
                 <ul id="menu">
                     <li>
                         <a id="header-line" href="/index.html">Inicio</a></li>
                     <li>
-                        <a id="header-line" href="">Matrículas</a>
+                        <a id="header-line" href={() => false}>Matrículas</a>
                         <ul id="submenu">
-                            <li><a id="header-line" href="/sources/forms/formPrescolar.html">Preescolar</a></li>
-                            <li><a id="header-line" href="/sources/forms/formPrimaria.html">Primaria</a></li>
-                            <li><a id="header-line" href="/sources/forms/formSecundaria.html">Secundaria</a></li>
+                            <li><a id="header-line" href={() => false}>Preescolar</a></li>
+                            <li><a id="header-line" href={() => false}>Primaria</a></li>
+                            <li><a id="header-line" href={() => false}>Secundaria</a></li>
                         </ul>
                     </li>
                 
-                <li><a id="header-line" href="#">Notas</a></li>
-                <li><a id="header-line" href="#">Docentes</a></li>
-                <li><a id="header-line" href="#">Misión y Visión</a></li>
-                <li><a id="header-line" href="#">PQRS</a></li>
+                <li><a id="header-line" href={() => false}>Notas</a></li>
+                <li><a id="header-line" href={() => false}>Docentes</a></li>
+                <li><a id="header-line" href={() => false}>Misión y Visión</a></li>
+                <li><a id="header-line" href={() => false}>PQRS</a></li>
                 <li>
-                    <a id="header-line" href="">functions</a>
+                    <a id="header-line" href={() => false}>functions</a>
                     <ul id="submenu">
-                        <li><a id="header-line" href="#">IMC</a></li>
+                        <li><a id="header-line" href={() => false}>IMC</a></li>
                     </ul>
                 </li>
                 </ul>
