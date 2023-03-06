@@ -1,0 +1,91 @@
+/*Inicia estilos para calculadora de imc*/
+/*Creado por Jose Gonzalez*/
+
+.Imc {
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+
+
+}
+
+.calc-imc {
+    border: 5px solid #ddd;
+    box-shadow: 0px 0px 10px;
+    padding: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botoncalcular {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 38px;
+    color: #20b2aa;
+}
+
+.p-imc {
+    text-align: justify;
+    font-size: 16px;
+    color: #000;
+    font-weight:bolder ;
+    
+}
+
+#resultado {
+    padding: 4px;
+    background-color: #ddd;
+    font-weight: bold;
+    color: #20b2aa;
+    text-align: center;
+}
+
+.menu-functions {
+    position: absolute;
+    display: none;
+    font-size: 18px;
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 10px;
+}
+
+.boton-calcular {
+    background: #20b2aa;
+    width: 130px;
+    height: 40px;
+    line-height: 2px;
+    padding: 0;
+    border: 1px;
+    text-decoration: solid;
+    border: 5px solid #ddd;
+    font-size: 18px;
+    
+
+}
+
+.boton-calcular:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(3px);
+    
+}
