@@ -7,6 +7,8 @@ import './componentes/footer/Footer.css'
 import reportWebVitals from './reportWebVitals';
 import Header from './componentes/header/Header'
 import './componentes/header/Header.css'
+import Imc from './componentes/calculadoraImc/Imc'
+import './componentes/calculadoraImc/Imc.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +23,13 @@ const header = ReactDOM.createRoot(document.getElementById('Header'));
 header.render(
   <React.StrictMode>
     <Header />
+  </React.StrictMode>
+);
+
+const imc = ReactDOM.createRoot(document.getElementById('Imc'));
+imc.render(
+  <React.StrictMode>
+    <Imc />
   </React.StrictMode>
 );
 
