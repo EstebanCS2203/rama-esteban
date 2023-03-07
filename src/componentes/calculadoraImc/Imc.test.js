@@ -17,7 +17,6 @@ describe('Imc component', () => {
     fireEvent.change(pesoInput, { target: { value: '70' } });
     fireEvent.change(alturaInput, { target: { value: '170' } });
     fireEvent.click(button);
-    fireEvent.click(button);
 
     expect(screen.getByText(/24.2/i)).toBeInTheDocument();
     expect(screen.getByText(/Tu IMC es:/i)).toBeInTheDocument();
