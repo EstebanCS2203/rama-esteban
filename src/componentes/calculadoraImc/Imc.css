@@ -1,36 +1,26 @@
 /*Inicia estilos para calculadora de imc*/
 /*Creado por Jose Gonzalez*/
 
-.Imc {
-    display: flex;
+.imc-container {
+
     justify-content: center;
-    background-color: #ddd;
-
-
-}
-
-.calc-imc {
-    border: 5px solid #ddd;
-    box-shadow: 0px 0px 10px;
-    padding: 15px;
     background-color: #ddd;
     border-radius: 10px;
-    width: 500px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+    padding: 10px;
+
 
 }
 
-.botoncalcular {
-    text-align: center;
-    font-size: 18px;
-    width: 100%;
-    margin-top: 20px;
+#calc-imc {
+    
     padding: 10px;
-    background-color: lightseagreen;
-    color: white;
-    cursor: pointer;
+    background-color: #ddd;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+
 }
 
 .titulo {
@@ -39,12 +29,12 @@
     color: #20b2aa;
 }
 
-.p-imc {
+#p-imc {
     text-align: justify;
     font-size: 16px;
     color: #000;
-    font-weight:bolder ;
-    
+    font-weight: bolder;
+
 }
 
 #resultado {
@@ -55,22 +45,17 @@
     text-align: center;
 }
 
-.menu-functions {
-    position: absolute;
-    display: none;
-    font-size: 18px;
-}
 
 input {
-    width: 90%;
+    width: 50%;
     height: 30px;
-    margin: 0.5rem;
+    margin: 2px;
     padding: 1px;
     box-sizing: border-box;
-    border: 10px;
+
 }
 
-.boton-calcular {
+#btn-calcular {
     background: #20b2aa;
     width: 130px;
     height: 40px;
@@ -80,12 +65,20 @@ input {
     text-decoration: solid;
     border: 2px solid #ddd;
     font-size: 18px;
-    
+
 
 }
 
-.boton-calcular:active {
+#btn-calcular:active {
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
     transform: translateY(3px);
-    
+
+}
+
+label {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left-start;
+    color: #20b2aa;
 }
