@@ -25,7 +25,7 @@ function Header() {
                 <li>
                     <a id="header-line" href={() => false}>functions</a>
                     <ul id="submenu">
-                        <li><a id="header-line" href="/src/componentes/calculadoraImc/Imc.html">IMC</a></li>
+                        <li><a id="header-line" href={() => false}>IMC</a></li>
                     </ul>
                 </li>
                 </ul>

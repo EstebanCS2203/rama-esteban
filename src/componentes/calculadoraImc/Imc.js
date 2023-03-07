@@ -22,18 +22,21 @@ function Imc() {
                 </div>
             </form>
             <div id="resultado"></div>
+            <script>
+                
+            </script>
+
         </div>
-        <script src="/sources/js/imc.js"></script>
+       
     </div>
   );
 }
 
 export default Imc;
-
-
+/*
 let botonCalcular = document.getElementById('btnCalcular');
 
-function calculandoIMC(){
+
   let peso = document.getElementById("peso").value;
   let altura = document.getElementById("altura").value/100;
   let resultado = document.getElementById("resultado");
@@ -63,7 +66,7 @@ function calculandoIMC(){
     resultado.textContent = "Por favor rellena todos los campos!!!"
   }
   
-}
+
 
 botonCalcular.addEventListener('click',calculandoIMC);
-
+*/
