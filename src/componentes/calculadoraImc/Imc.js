@@ -1,72 +1,57 @@
+import React, { useState } from 'react';
 import './Imc.css';
 
-
 function Imc() {
-  return (    
-    <div className="Imc">
-        <div class="calc-imc">
-            <h1 class="titulo">Calculadora de IMC</h1>
-            <form>
-                <p class="p-imc">Digite su peso en kilogramos</p>
-                <div id="input">
-                    <input id="peso" type="number" />
-                    <span>Kg</span>
-                </div>
-                <div id="input">
-                    <p class="p-imc">Digite su altura en centimetos</p>
-                    <input id="altura" type="number" />
-                    <span>Cm</span>
-                </div>
-                <div id="input">
-                    <input id="btnCalcular" class="boton-calcular" type="button" value="Calcular" />
-                </div>
-            </form>
-            <div id="resultado"></div>
-            <script>
-                
-            </script>
+  const [peso, setPeso] = useState('');
+  const [altura, setAltura] = useState('');
+  const [imc, setImc] = useState('');
+  const [mensaje, setMensaje] = useState('');
 
-        </div>
-       
+  function calcularIMC() {
+    if (peso && altura) {
+      const alturaMetros = altura / 100;
+      const imcCalculado = peso / (alturaMetros * alturaMetros);
+      setImc(imcCalculado.toFixed(1));
+
+      if (imcCalculado < 18.5) {
+        setMensaje("bajo peso 😨 !");
+      } else if (imcCalculado < 25) {
+        setMensaje("Tienes el peso ideal 🤗");
+      } else if (imcCalculado < 30) {
+        setMensaje("Tienes un poco de sobrepeso 😐");
+      } else if (imcCalculado < 35) {
+        setMensaje("¡Cuidado! grado de obesidad 1 😦");
+      } else if (imcCalculado < 40) {
+        setMensaje("¡Cuidado! grado de obesidad 2 😧");
+      } else {
+        setMensaje("¡Cuidado! grado de obesidad 3 😨");
+      }
+
+    } else {
+      
+      setMensaje("Por favor rellena todos los campos!!!");
+    }
+
+  }
+
+  return (
+    <div className="imc-container">
+      <h1>Calculadora de IMC</h1>
+      <div id='calc-imc'>
+        <label htmlFor='peso'>Peso (kg): </label>
+        <input id='peso' type="number" value={peso} onChange={(e) => setPeso(e.target.value)} />
+        
+      </div>
+      <div id='calc-imc'>
+      <label htmlFor='altura'>Altura (cm): </label>
+        <input id='altura' type="number" value={altura} onChange={(e) => setAltura(e.target.value)} />
+      </div>
+      <button id='btn-calcular' onClick={calcularIMC}>Calcular</button>
+      {imc && <p id='resultado'> Para una altura de {altura} cm y un peso {peso} Kg de Tu IMC es: {imc} = {mensaje}</p>}
     </div>
+
   );
+
 }
 
 export default Imc;
-/*
-let botonCalcular = document.getElementById('btnCalcular');
-
-
-  let peso = document.getElementById("peso").value;
-  let altura = document.getElementById("altura").value/100;
-  let resultado = document.getElementById("resultado");
-  
-  if(altura !== "" && peso !== ""){
-    
-    let imc = (peso / (altura * altura)).toFixed(1);
-    let mensagem = "";
-    
-    if(imc < 18.5){
-      mensagem = "bajo peso 😨 !"
-    }else if(imc < 25){
-      mensagem = "Tienes el peso ideal 🤗"
-    }else if( imc < 30){
-      mensagem = "Tienes un poco de sobrepeso 😐"
-    }else if( imc < 35){
-      mensagem = "¡Cuidado! grado de obesidad 1 😦"
-    }else if( imc < 40){
-      mensagem = "¡Cuidado! grado de obesidad 2 😧"
-    }else {
-      mensagem = "¡Cuidado! grado de obesidad 3 😨"
-    }
-
-    resultado.textContent = `Su IMC es ${imc}. ${mensagem}`;
-    
-  }else{
-    resultado.textContent = "Por favor rellena todos los campos!!!"
-  }
-  
-
-
-botonCalcular.addEventListener('click',calculandoIMC);
-*/
