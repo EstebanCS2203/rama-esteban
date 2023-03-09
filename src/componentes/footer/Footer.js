@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className="Footer">
             <div id="divgov">
-                <footer class="footergov">
+                <footer className="footergov">
                 <div id="gov">
                         <a href="https://www.gobiernoenlinea.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/CMqXQyT2/gobierno.png" alt="Gobierno en línea" width="57" height="50"></img></a>
                         <a href="http://www.mineducacion.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/ZYpsLr6t/mineduca.png" rel="noopener" alt="Secretaría de Educación Colombia" width="154" height="50"></img></a>
@@ -16,11 +16,11 @@ function Footer() {
                     </div>
                 </footer>
             </div>
-            <footer class="footer-total">
+            <footer className="footer-total">
                 <div id="footer-izq">
                     <h3>Institución<span> Jose Fernando Causado</span></h3>
                     <p id="footer-links">
-                        <a href={() => false} id="link-1"> Home </a>
+                        <a href={() => false}> Home </a>
                         <a href={() => false}> Acerca de nosotros </a>
                         <a href={() => false}> Preguntas </a>
                         <a href={() => false}> Contacto </a>
