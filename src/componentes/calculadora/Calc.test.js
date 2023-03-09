@@ -44,4 +44,18 @@ describe('Calc', () => {
         userEvent.click(buttonEqual);
         expect(screen.getByText('6')).toBeInTheDocument();
     });
+    
+
+    test('Dividir dos numeros', () => {
+        render(<Calc />);
+        const buttonSix = screen.getByText('6');
+        const buttonDivide = screen.getByText('/');
+        const buttonTwo = screen.getByText('2');
+        const buttonEqual = screen.getByText('=');
+        userEvent.click(buttonSix);
+        userEvent.click(buttonDivide);
+        userEvent.click(buttonTwo);
+        userEvent.click(buttonEqual);
+        expect(screen.getByText('3')).toBeInTheDocument();
+    });
 });
