@@ -79,7 +79,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-###Componentes necesarios
+Componentes necesarios
 
 Math.js: es una extensa biblioteca matemática para JavaScript y Node.js. Cuenta con un analizador de expresiones flexible con soporte para cálculo simbólico, viene con un gran conjunto de funciones y constantes integradas, y ofrece una solución integrada para trabajar con diferentes tipos de datos como números, números grandes, números complejos, fracciones, unidades y matrices. Poderoso y facil de usar.
 
