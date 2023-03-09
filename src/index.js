@@ -9,7 +9,8 @@ import Header from './componentes/header/Header'
 import './componentes/header/Header.css'
 import Imc from './componentes/calculadoraImc/Imc'
 import './componentes/calculadoraImc/Imc.css'
-
+import Calc from './componentes/calculadora/Calc';
+import './componentes/calculadora/Calc.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,14 @@ imc.render(
     <Imc />
   </React.StrictMode>
 );
+
+const calc = ReactDOM.createRoot(document.getElementById('Calc'));
+calc.render(
+  <React.StrictMode>
+    <Calc />
+  </React.StrictMode>
+);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
