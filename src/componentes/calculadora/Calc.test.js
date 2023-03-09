@@ -19,4 +19,17 @@ describe('Calc', () => {
         expect(screen.getByText('2')).toBeInTheDocument();
     });
 
+    test('Restar dos numeros', () => {
+        render(<Calc />);
+        const buttonTwo = screen.getByText('2');
+        const buttonSubtract = screen.getByText('-');
+        const buttonOne = screen.getByText('1');
+        const buttonEqual = screen.getByText('=');
+        userEvent.click(buttonTwo);
+        userEvent.click(buttonSubtract);
+        userEvent.click(buttonOne);
+        userEvent.click(buttonEqual);
+        expect(screen.getByText('1')).toBeInTheDocument();
+    });
+
 });
