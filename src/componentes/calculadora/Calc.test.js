@@ -32,4 +32,16 @@ describe('Calc', () => {
         expect(screen.getByText('1')).toBeInTheDocument();
     });
 
+    test('Multiplicar dos numeros', () => {
+        render(<Calc />);
+        const buttonTwo = screen.getByText('2');
+        const buttonMultiply = screen.getByText('*');
+        const buttonThree = screen.getByText('3');
+        const buttonEqual = screen.getByText('=');
+        userEvent.click(buttonTwo);
+        userEvent.click(buttonMultiply);
+        userEvent.click(buttonThree);
+        userEvent.click(buttonEqual);
+        expect(screen.getByText('6')).toBeInTheDocument();
+    });
 });
