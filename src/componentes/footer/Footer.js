@@ -4,23 +4,23 @@ function Footer() {
     return (
         <div className="Footer">
             <div id="divgov">
-                <footer class="footergov">
-                    <div id="gov">
-                        <a href="https://www.gobiernoenlinea.gov.co" target="_blank"><img src="https://i.postimg.cc/CMqXQyT2/gobierno.png" alt="Gobierno en línea" width="57" height="50"></img></a>
-                        <a href="http://www.mineducacion.gov.co" target="_blank"><img src="https://i.postimg.cc/ZYpsLr6t/mineduca.png" alt="Secretaría de Educación Colombia" width="154" height="50"></img></a>
-                        <a href="http://www.colombiaaprende.edu.co" target="_blank"><img src="https://i.postimg.cc/9MvSQbT1/colombiaprende.png" alt="Colombia aprende" width="56" height="50"></img></a>
-                        <a href="http://www.medellin.gov.co" target="_blank"><img src="https://i.postimg.cc/g07tgsMd/medellin.png" alt="Secretaría de Educación Medellín" width="70" height="50"></img></a>
-                        <a href="http://www.medellin.edu.co" target="_blank"><img src="https://i.postimg.cc/QCQ6x3jx/medellinedu.png" alt="Secretaría de Educación de Medellín" width="77" height="50"></img></a>
-                        <a href="http://www.icfes.gov.co" target="_blank"><img src="https://i.postimg.cc/mgbnktzx/icfes.png" alt="ICFES" width="136" height="50"></img></a>
-                        <a href="http://www.seduca.gov.co" target="_blank"><img src="https://i.postimg.cc/fRTHZppD/seduca.png" alt="Secretaría de Educación de Antioquia" width="136" height="50"></img></a>
+                <footer className="footergov">
+                <div id="gov">
+                        <a href="https://www.gobiernoenlinea.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/CMqXQyT2/gobierno.png" alt="Gobierno en línea" width="57" height="50"></img></a>
+                        <a href="http://www.mineducacion.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/ZYpsLr6t/mineduca.png" rel="noopener" alt="Secretaría de Educación Colombia" width="154" height="50"></img></a>
+                        <a href="http://www.colombiaaprende.edu.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/9MvSQbT1/colombiaprende.png"  rel="noopener noreferrer" alt="Colombia aprende" width="56" height="50"></img></a>
+                        <a href="http://www.medellin.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/g07tgsMd/medellin.png" rel="noopener noreferrer" alt="Secretaría de Educación Medellín" width="70" height="50"></img></a>
+                        <a href="http://www.medellin.edu.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/QCQ6x3jx/medellinedu.png"  rel="noopener noreferrer" alt="Secretaría de Educación de Medellín" width="77" height="50"></img></a>
+                        <a href="http://www.icfes.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/mgbnktzx/icfes.png"  rel="noopener noreferrer" alt="ICFES" width="136" height="50"></img></a>
+                        <a href="http://www.seduca.gov.co" target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/fRTHZppD/seduca.png"  rel="noopener noreferrer" alt="Secretaría de Educación de Antioquia" width="136" height="50"></img></a>
                     </div>
                 </footer>
             </div>
-            <footer class="footer-total">
+            <footer className="footer-total">
                 <div id="footer-izq">
                     <h3>Institución<span> Jose Fernando Causado</span></h3>
                     <p id="footer-links">
-                        <a href={() => false} id="link-1"> Home </a>
+                        <a href={() => false}> Home </a>
                         <a href={() => false}> Acerca de nosotros </a>
                         <a href={() => false}> Preguntas </a>
                         <a href={() => false}> Contacto </a>

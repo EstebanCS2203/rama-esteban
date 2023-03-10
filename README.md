@@ -8,6 +8,18 @@ Proyecto Pagina Institucional UNIREMINGTON con React
 - Edison Pineda
 - Esteban Causado
 
+# Componentes necesarios
+
+#### Math
+
+mathjs: es una extensa biblioteca matemática para JavaScript y Node.js. Cuenta con un analizador de expresiones flexible con soporte para cálculo simbólico, viene con un gran conjunto de funciones y constantes integradas, y ofrece una solución integrada para trabajar con diferentes tipos de datos como números, números grandes, números complejos, fracciones, unidades y matrices. Poderoso y facil de usar.
+
+**Instalacion:**
+
+`$ npm install marked`
+
+###
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -78,3 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
