@@ -16,7 +16,7 @@ mathjs: es una extensa biblioteca matemática para JavaScript y Node.js. Cuenta 
 
 **Instalacion:**
 
-`$ npm install marked`
+`$ npm install mathjs`
 
 ###
 
