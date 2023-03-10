@@ -15,6 +15,8 @@ import Fecha from './componentes/fecha/Fecha';
 import './componentes/fecha/Fecha.css';
 import Pokeapi from './componentes/pokeapi/Pokeapi';
 import './componentes/pokeapi/Pokeapi.css'
+import Medidas from './componentes/conversorMedidas/Medidas';
+import './componentes/conversorMedidas/Medidas.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -60,6 +62,12 @@ pokeapi.render(
   </React.StrictMode>
 );
 
+const medidas = ReactDOM.createRoot(document.getElementById('Medidas'));
+medidas.render(
+  <React.StrictMode>
+    <Medidas />
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
