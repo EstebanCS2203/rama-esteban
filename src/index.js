@@ -13,6 +13,9 @@ import Calc from './componentes/calculadora/Calc';
 import './componentes/calculadora/Calc.css'
 import Fecha from './componentes/fecha/Fecha';
 import './componentes/fecha/Fecha.css';
+import Pokeapi from './componentes/pokeapi/Pokeapi';
+import './componentes/pokeapi/Pokeapi.css'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -47,6 +50,13 @@ const fecha = ReactDOM.createRoot(document.getElementById('Fecha'));
 fecha.render(
   <React.StrictMode>
     <Fecha />
+  </React.StrictMode>
+);
+
+const pokeapi = ReactDOM.createRoot(document.getElementById('Pokeapi'));
+pokeapi.render(
+  <React.StrictMode>
+    <Pokeapi />
   </React.StrictMode>
 );
 
