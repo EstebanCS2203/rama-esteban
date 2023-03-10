@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Fecha.css';
 
 function Fecha() {
-  const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-  const mesesAno = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+  const diasSemana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+  const mesesAno = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
   const [fechaActual, setFechaActual] = useState(new Date());
 
@@ -22,9 +22,10 @@ function Fecha() {
   const ano = fechaActual.getFullYear();
 
   return (
-    <div className="fecha">
-      {diaSemana}, {diaMes} de {mes} de {ano}
-    </div>
+    
+      <div id="fecha" data-testid="fecha">
+        {`${diaSemana}, ${diaMes} de ${mes} de ${ano}`}
+      </div>
   );
 }
 
