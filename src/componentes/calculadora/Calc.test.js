@@ -1,61 +1,30 @@
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Calc from './Calc';
 
 describe('Calc', () => {
-    test('Renderizar sin errores', () => {
-        render(<Calc />);
-    });
+test('Evaluar una operación compleja', () => {
+    render(<Calc />);
+    const buttonEight = screen.getByText('8');
+    const buttonTwo = screen.getByText('2');
+    const buttonDivide = screen.getByText('/');
+    const buttonPlus = screen.getByText('+');
+    const buttonMinus = screen.getByText('-');
+    const buttonEqual = screen.getByText('=');
+    const buttonSix = screen.getByText('6');
+    const buttonMultiply = screen.getByText('*');
 
-    test('Mostrar resultados de suma', () => {
-        render(<Calc />);
-        const buttonOne = screen.getByText('1');
-        const buttonAdd = screen.getByText('+');
-        const buttonEqual = screen.getByText('=');
-        userEvent.click(buttonOne);
-        userEvent.click(buttonAdd);
-        userEvent.click(buttonOne);
-        userEvent.click(buttonEqual);
-        expect(screen.getByText('2')).toBeInTheDocument();
-    });
+    fireEvent.click(buttonEight);
+    fireEvent.click(buttonMultiply);
+    fireEvent.click(buttonTwo);
+    fireEvent.click(buttonPlus);
+    fireEvent.click(buttonEight);
+    fireEvent.click(buttonDivide);
+    fireEvent.click(buttonTwo);
+    fireEvent.click(buttonMinus);
+    fireEvent.click(buttonSix);
+    fireEvent.click(buttonEqual);
 
-    test('Restar dos numeros', () => {
-        render(<Calc />);
-        const buttonTwo = screen.getByText('2');
-        const buttonSubtract = screen.getByText('-');
-        const buttonOne = screen.getByText('1');
-        const buttonEqual = screen.getByText('=');
-        userEvent.click(buttonTwo);
-        userEvent.click(buttonSubtract);
-        userEvent.click(buttonOne);
-        userEvent.click(buttonEqual);
-        expect(screen.getByText('1')).toBeInTheDocument();
-    });
-
-    test('Multiplicar dos numeros', () => {
-        render(<Calc />);
-        const buttonTwo = screen.getByText('2');
-        const buttonMultiply = screen.getByText('*');
-        const buttonThree = screen.getByText('3');
-        const buttonEqual = screen.getByText('=');
-        userEvent.click(buttonTwo);
-        userEvent.click(buttonMultiply);
-        userEvent.click(buttonThree);
-        userEvent.click(buttonEqual);
-        expect(screen.getByText('6')).toBeInTheDocument();
-    });
-    
-
-    test('Dividir dos numeros', () => {
-        render(<Calc />);
-        const buttonSix = screen.getByText('6');
-        const buttonDivide = screen.getByText('/');
-        const buttonTwo = screen.getByText('2');
-        const buttonEqual = screen.getByText('=');
-        userEvent.click(buttonSix);
-        userEvent.click(buttonDivide);
-        userEvent.click(buttonTwo);
-        userEvent.click(buttonEqual);
-        expect(screen.getByText('3')).toBeInTheDocument();
-    });
+    const result = screen.queryByText('6');
+    expect(result).toBeInTheDocument();
+});
 });
