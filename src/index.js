@@ -11,6 +11,8 @@ import Imc from './componentes/calculadoraImc/Imc'
 import './componentes/calculadoraImc/Imc.css'
 import Calc from './componentes/calculadora/Calc';
 import './componentes/calculadora/Calc.css'
+import Fecha from './componentes/fecha/Fecha';
+import './componentes/fecha/Fecha.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,6 +40,13 @@ const calc = ReactDOM.createRoot(document.getElementById('Calc'));
 calc.render(
   <React.StrictMode>
     <Calc />
+  </React.StrictMode>
+);
+
+const fecha = ReactDOM.createRoot(document.getElementById('Fecha'));
+fecha.render(
+  <React.StrictMode>
+    <Fecha />
   </React.StrictMode>
 );
 
