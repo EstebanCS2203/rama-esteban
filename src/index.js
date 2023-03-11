@@ -17,6 +17,8 @@ import Pokeapi from './componentes/pokeapi/Pokeapi';
 import './componentes/pokeapi/Pokeapi.css'
 import Medidas from './componentes/conversorMedidas/Medidas';
 import './componentes/conversorMedidas/Medidas.css';
+import Calcnotas from './componentes/calcnotas/Calcnotas';
+import './componentes/calcnotas/Calcnotas.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -69,6 +71,12 @@ medidas.render(
   </React.StrictMode>
 );
 
+const calcnotas = ReactDOM.createRoot(document.getElementById('Calcnotas'));
+calcnotas.render(
+  <React.StrictMode>
+    <Calcnotas />
+  </React.StrictMode>
+)
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
