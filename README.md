@@ -20,6 +20,13 @@ mathjs: es una extensa biblioteca matemática para JavaScript y Node.js. Cuenta 
 
 ###
 
+# Software Adicional
+
+`$ npm install render`
+`$ npm install screen`
+`$ npm install fireEvent`
+`$ npm install waitFor`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
