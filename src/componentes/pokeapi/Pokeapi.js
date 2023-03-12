@@ -42,10 +42,10 @@ function Pokeapi() {
             <form onSubmit={handleSubmit} className="contenedor-form">
 
 
-                <div class="cabecera">
-                    <img src="https://i.postimg.cc/s2cSCxwN/361998.png"  alt="Pokeball" class="imagen-cabecera"></img>
-                    <h2 class="header-title">Pokédex</h2>
-                    <img src="https://i.postimg.cc/s2cSCxwN/361998.png" alt="Pokeball" class="imagen-cabecera"></img>
+                <div className='cabecera'>
+                    <img src="https://i.postimg.cc/s2cSCxwN/361998.png"  alt="Pokeball" className="imagen-cabecera"></img>
+                    <h2 className="header-title">Pokédex</h2>
+                    <img src="https://i.postimg.cc/s2cSCxwN/361998.png" alt="Pokeball" className="imagen-cabecera"></img>
                 </div>
 
 
