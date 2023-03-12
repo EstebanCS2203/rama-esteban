@@ -13,17 +13,17 @@ describe('Pokeapi component', () => {
     const pokemonNumberInput = screen.getByLabelText('Ingrese el Número del Pokémon:');
     const button = screen.getByText('Buscar');
     
-    fireEvent.change(pokemonNumberInput, { target: { value: '6' } });
+    fireEvent.change(pokemonNumberInput, { target: { value: '19' } });
     fireEvent.click(button);
 
     await waitFor(() => {
-      expect(screen.getByText(/Charizard/i)).toBeInTheDocument();
+      expect(screen.getByText(/RATTATA/i)).toBeInTheDocument();
   });
   // Verificar que se muestre la información correcta
-  expect(screen.getByText(/fire/i)).toContainElement(screen.getByText(/fire/i));
-  expect(screen.getByText(/17 cm/i)).toContainElement(screen.getByText(/17 cm/i));
-  expect(screen.getByText(/905 kg/i)).toContainElement(screen.getByText(/905 kg/i));  
-  expect(screen.getByText(/267 exp/i)).toContainElement(screen.getByText(/267 exp/i));  
+  expect(screen.getByText(/normal/i)).toContainElement(screen.getByText(/normal/i));
+  expect(screen.getByText(/3 cm/i)).toContainElement(screen.getByText(/3 cm/i));
+  expect(screen.getByText(/35 kg/i)).toContainElement(screen.getByText(/35 kg/i));  
+  expect(screen.getByText(/51 exp/i)).toContainElement(screen.getByText(/51 exp/i));  
  
   });
 
