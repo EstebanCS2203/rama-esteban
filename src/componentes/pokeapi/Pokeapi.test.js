@@ -25,6 +25,5 @@ describe('Pokeapi component', () => {
   expect(screen.getByText(/35 kg/i)).toContainElement(screen.getByText(/35 kg/i));  
   expect(screen.getByText(/51 exp/i)).toContainElement(screen.getByText(/51 exp/i));  
  
-  });
-
+  })
 });
